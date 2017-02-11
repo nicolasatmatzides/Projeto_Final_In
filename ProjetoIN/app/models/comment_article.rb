@@ -1,2 +1,3 @@
 class CommentArticle < ApplicationRecord
+    
 end
