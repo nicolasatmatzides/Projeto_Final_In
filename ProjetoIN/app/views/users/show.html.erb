@@ -4,7 +4,8 @@
   <strong>Password digest:</strong>
   <%= @user.password_digest %>
 </p>
-
+<body>
+di  
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
@@ -21,8 +22,8 @@
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= @user.url %>
+  <strong>Member since:</strong>
+  <%= @user.member_since %>
 </p>
 
 <p>
@@ -34,6 +35,6 @@
   <strong>Description:</strong>
   <%= @user.description %>
 </p>
-
+</body>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

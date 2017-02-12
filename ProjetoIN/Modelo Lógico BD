@@ -16,9 +16,9 @@ user_id:integer, question_id:integer)
     question_id refers to Question
 
 Comment(id:serial, content:text, post_time:datetime, last_edit:datetime, 
-user_id:integer, comment_id:integer)
+user_id:integer, article_id:integer)
     user_id refers to User
-    comment_id refers to Comment
+    article_id refers to Article
   
 /* Essa tabela tem como propósito relacionar colaboradores a um artigo */  
 UserArticle(id:serial, user_id:integer, article_id:integer)

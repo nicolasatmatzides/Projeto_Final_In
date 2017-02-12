@@ -1,0 +1,25 @@
+ <body>
+  <div class="col-md-12 container formulario" >
+
+     <%= form_for(:session, url: login_path) do |f| %>
+      
+    <h2>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    </h2>
+    <h2>
+    <%= f.label :senha %>
+    <%= f.password_field :password %><br>
+    </h2>
+    
+    <div class=btn_login><%= f.submit "LogIN" %></div>
+  
+  <% end %>
+    <div class="pass_reset">
+      <label> 
+        <input type="submit" value="Esqueceu sua senha?" class="pass-reset-submit btn btn-success btn-sm" />
+      </label>
+    </div>
+    </div>    
+  </div>  
+</body>

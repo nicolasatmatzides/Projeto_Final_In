@@ -7,10 +7,9 @@
     <tr>
       <th>Title</th>
       <th>Content</th>
-      <th>Date</th>
+      <th>Post time</th>
+      <th>Last edit</th>
       <th>Tags</th>
-      <th>Views</th>
-      <th>Url</th>
       <th>User</th>
       <th colspan="3"></th>
     </tr>
@@ -21,10 +20,9 @@
       <tr>
         <td><%= article.title %></td>
         <td><%= article.content %></td>
-        <td><%= article.date %></td>
+        <td><%= article.post_time %></td>
+        <td><%= article.last_edit %></td>
         <td><%= article.tags %></td>
-        <td><%= article.views %></td>
-        <td><%= article.url %></td>
         <td><%= article.user_id %></td>
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>

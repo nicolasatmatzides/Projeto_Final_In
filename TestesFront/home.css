@@ -1,0 +1,220 @@
+*{
+	padding: 0; 
+	margin: 0;
+}	
+html {
+  height:100%;
+}
+body{
+  height:100%;
+}
+header{
+	height: 500px;
+	width: 100%;
+	position: relative;
+	background-size: 100% 100% ;
+    background-color: #696969;
+    margin:0 !important;
+}
+
+@font-face {
+     font-family: libertine;
+     src: url('librtine.ttf');
+}
+.geral {
+	min-height:100%;
+	position:relative;
+	width:100%;
+}
+.mynavbar{
+    width: 100%;
+    background-color:#000;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.50);
+    margin:0px;
+    position: relative;
+}
+.navbarTop{
+    height: 50px;
+    width: 80%;
+    background-color:#000;
+    border-bottom: solid;
+    border-bottom: 50%;
+    border-color: #696969;
+    border-width: 0.5px;
+    margin-left: 10%;
+}
+.navbarBotton {
+    background-color: #000;
+    width: 80%;
+    height: 40px;
+    float: center;
+    margin-left: 10%;
+    margin-top: 0px;
+}
+.opcoes li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color:#06c;
+}
+.dropdown button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -35%);
+  background-color:transparent !important;
+  border:none;
+}
+
+.navbarBotton li a:hover{
+    transition: 0.5s;
+    color: #b4b4b4;
+    text-decoration: none;
+    display: inline-block;
+}
+.logomarca {
+    display: inline-block;
+    height: 10px; 
+}
+.opcoes{
+    padding-top: 10px;
+    position: relative;
+
+}
+.dropdown{
+  margin: 0px;
+  float: right;
+}
+
+.dropdown button:hover{
+  border-color:transparent;
+}
+#wrap {
+  margin: 0;
+  display: inline-block;
+  height: 60px;
+  float: right;
+  padding: 0;
+  position: relative;
+}
+
+input[type="text"] {
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+  color: #b4b4b4;
+}
+
+input[type="text"]:focus {
+  width: 700px;
+  z-index: 1;
+  cursor: text;
+}
+input[type="submit"] {
+  height: 47px;
+  width: 43px;
+  display: inline-block;
+  color:#fff;
+  float: right;
+  background: url("images/search.png") center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+#banner{
+  margin:0;
+}
+#banner h1{
+  font-family:"libertini", "Lato", "sans-serife";
+  text-align:center;
+  font-size: 100px;
+  color:#fff;
+  margin-top: 120px;
+
+}
+.footer{
+  width: 100%;
+  box-shadow:0 0 7px rgba(0,0,0,0.50);
+  margin:0px !important;
+  background-color: #000;
+  padding: 0px;
+  bottom:0;
+  width:100%;
+  height: 120px;
+  text-align: center;
+}
+#textoFooter{
+  color: #b4b4b4;
+  font-family: "Arial";
+  text-align: center;
+  font-size: 17px;
+  margin:0px;
+  width: 100%;
+  line-height: 120px;
+}
+#textoFooter p{
+  margin: 0px;
+}
+.logo{
+  float:left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 20px;
+}
+.content{
+  background-color: cornflowerblue;
+}
+.posts{
+  padding: 0px 100px;
+}
+.post{
+    text-align: center;
+    margin:60px 0px 60px 0px;
+    padding: 10px 20px 30px 20px;
+    border-radius:3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+}
+.post h2{
+  padding-bottom: 10px;
+}
+.img{
+  margin-bottom: 30px;
+}
+.lateral{
+    text-align: center;
+    margin:60px 0px 60px 0px;
+    padding: 10px 20px 30px 20px;
+    border-radius:3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+    height: 1000px;
+}

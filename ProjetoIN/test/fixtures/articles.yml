@@ -3,17 +3,15 @@
 one:
   title: MyString
   content: MyText
-  date: 2017-02-11 02:15:33
+  post_time: 2017-02-11 23:31:19
+  last_edit: 2017-02-11 23:31:19
   tags: MyString
-  views: 1
-  url: MyString
   user_id: 1
 
 two:
   title: MyString
   content: MyText
-  date: 2017-02-11 02:15:33
+  post_time: 2017-02-11 23:31:19
+  last_edit: 2017-02-11 23:31:19
   tags: MyString
-  views: 1
-  url: MyString
   user_id: 1

@@ -1,3 +1,0 @@
-class CommentArticle < ApplicationRecord
-    
-end

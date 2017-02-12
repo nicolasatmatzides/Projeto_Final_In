@@ -1,1 +1,0 @@
-json.array! @comment_articles, partial: 'comment_articles/comment_article', as: :comment_article

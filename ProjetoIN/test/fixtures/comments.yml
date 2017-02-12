@@ -2,10 +2,14 @@
 
 one:
   content: MyText
-  date: 2017-02-11 02:24:28
+  post_time: 2017-02-11 23:33:42
+  last_edit: 2017-02-11 23:33:42
   user_id: 1
+  article_id: 1
 
 two:
   content: MyText
-  date: 2017-02-11 02:24:28
+  post_time: 2017-02-11 23:33:42
+  last_edit: 2017-02-11 23:33:42
   user_id: 1
+  article_id: 1

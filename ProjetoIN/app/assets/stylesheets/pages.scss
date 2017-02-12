@@ -1,0 +1,35 @@
+@font-face {
+     font-family: libertine;
+     src: url('librtine.ttf');
+}
+.posts{
+  padding: 0px 100px;
+} 
+.post{
+    text-align: center;
+    margin:60px 0px 60px 0px;
+    padding: 10px 20px 30px 20px;
+    border-radius:3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+}
+.post h2{
+  padding-bottom: 10px;
+}
+.img{
+  margin-bottom: 30px;
+}
+.lateral{
+    text-align: center;
+    margin:60px 0px 60px 0px;
+    padding: 10px 20px 30px 20px;
+    border-radius:3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    border: 1px solid rgba(0,0,0,.09);
+    height: 1000px;
+}
+.geral{
+  display:inline-block;
+}

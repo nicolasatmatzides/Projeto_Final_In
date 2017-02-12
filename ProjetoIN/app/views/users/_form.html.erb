@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password_digest %>
-    <%= f.password_field :password_digest %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
   </div>
 
   <div class="field">
@@ -32,60 +32,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :url %>
-    <%= f.text_field :url %>
-  </div>
-
-  <div class="field">
-    <%= f.label :last_time %>
-    <%= f.datetime_select :last_time %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-<%= form_for(user) do |f| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password_digest %>
-    <%= f.password_field :password_digest %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :admin %>
-    <%= f.check_box :admin %>
-  </div>
-
-  <div class="field">
-    <%= f.label :url %>
-    <%= f.text_field :url %>
+    <%= f.label :member_since %>
+    <%= f.datetime_select :member_since %>
   </div>
 
   <div class="field">
