@@ -18,8 +18,6 @@
     <% @answers.each do |answer| %>
       <tr>
         <td><%= answer.content %></td>
-        <td><%= answer.post_time %></td>
-        <td><%= answer.last_edit %></td>
         <td><%= answer.user_id %></td>
         <td><%= answer.question_id %></td>
         <td><%= link_to 'Show', answer %></td>

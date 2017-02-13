@@ -1,34 +1,28 @@
  <header>
-              <nav class="mynavbar">
-                 <div class ="navbarTop">
-                      <div class="logomarca">
-                          <a href="home.html"><img src="images/logopng.png"></a>
-                      </div>
-                      <div id="wrap">
-                        <form action="" autocomplete="on">
-                        <input id="search" name="search" type="text" placeholder="Digite sua busca"><input id="search_submit" value="Rechercher" type="submit">
-                        </form>
-                      </div>
-                  </div>
-                  <div class="navbarBotton">
-                    <div class=opcoes>
-                      <li><a href="#">HOME</a></li>
-                      <li><a href="#">FORUM</a></li>
-                      <li><a href="#">GUIDE</a></li>
-                      <li><a href="#">ESTATÍSTICAS</a></li>
-                      <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><img src="images/male-user.png">
-                        </button>
-                          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Minha conta</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Desconectar</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Favoritos</a></li>
-                          </ul>
-                          </div>
-                      </div>   
-                  </div>
-              </nav>
-              <div id=banner>
-                <h1>Wolfpédia</h1>
-              </div>
-          </header>
+  <nav class="mynavbar">
+   <div class ="navbarTop">
+    <div class="logomarca">
+      <a href="home"><%= image_tag("logopng.png", alt:'logo-in-junior') %></a>
+    </div>
+    <div id="wrap">
+      <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Digite sua busca"><input id="search_submit"type="submit">
+      </form>
+      </div>
+      </div>
+      <div class="navbarBotton">
+        <ul class=opcoes>
+          <li><b><a href="home">HOME</a></li>
+          <li><a href="#">POSTS</a></li>
+          <li><a href="#">FÓRUM</a></li>
+          <li><a href="#">ESTATÍSTICAS</a></b></li>
+          <li class='li-r dp-botao'><a href="#">Menu</a></li>
+        </ul>
+        <ul class='dp-menu f-right'>
+          <li> <a href="#">Minha conta</a></li>
+          <li><a href="#">Desconectar</a></li>
+          <li> <a href="#">Favoritos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>

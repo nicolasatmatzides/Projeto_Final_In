@@ -18,8 +18,6 @@
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.content %></td>
-        <td><%= comment.post_time %></td>
-        <td><%= comment.last_edit %></td>
         <td><%= comment.user_id %></td>
         <td><%= comment.article_id %></td>
         <td><%= link_to 'Show', comment %></td>

@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
       if user && user.authenticate(params[:session][:password])
         log_in user 
+        user.update_attribute(:last_time, DateTime.now)
         redirect_to '/home'
       else
       flash.now[:danger] = 'Combinação inválida de email/senha'
@@ -17,6 +18,7 @@ class SessionsController < ApplicationController
     log_out
     redirect_to root_url
   end
+  
   
   private
   

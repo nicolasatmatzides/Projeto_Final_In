@@ -10,12 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211233437) do
+ActiveRecord::Schema.define(version: 20170213181528) do
 
   create_table "answers", force: :cascade do |t|
     t.text     "content"
-    t.datetime "post_time"
-    t.datetime "last_edit"
     t.integer  "user_id"
     t.integer  "question_id"
     t.datetime "created_at",  null: false
@@ -25,8 +23,6 @@ ActiveRecord::Schema.define(version: 20170211233437) do
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "post_time"
-    t.datetime "last_edit"
     t.string   "tags"
     t.integer  "user_id"
     t.datetime "created_at", null: false
@@ -35,8 +31,6 @@ ActiveRecord::Schema.define(version: 20170211233437) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
-    t.datetime "post_time"
-    t.datetime "last_edit"
     t.integer  "user_id"
     t.integer  "article_id"
     t.datetime "created_at", null: false
@@ -46,8 +40,6 @@ ActiveRecord::Schema.define(version: 20170211233437) do
   create_table "questions", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "post_time"
-    t.datetime "last_edit"
     t.string   "tags"
     t.integer  "user_id"
     t.datetime "created_at", null: false
@@ -66,7 +58,6 @@ ActiveRecord::Schema.define(version: 20170211233437) do
     t.string   "email"
     t.string   "name"
     t.boolean  "admin"
-    t.datetime "member_since"
     t.datetime "last_time"
     t.text     "description"
     t.datetime "created_at",      null: false

@@ -1,10 +1,9 @@
 header{
-	height: 500px;
 	width: 100%;
 	position: relative;
 	background-size: 100% 100% ;
-    background-color: #696969;
-    margin:0 !important;
+  background-color: #b4b4b4;
+  margin:0 !important;
 }
 
 @font-face {
@@ -47,15 +46,38 @@ header.geral {
     margin-right: 20px;
     text-decoration: none;
     color:#06c;
-    font-family: "Open Sans",sans-serif;
+    font-family: sans-serif "Open Sans";
+    float:left;
 }
-.dropdown button{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-70%, -35%);
-  background-color:transparent !important;
-  border:none;
+.li-r{
+  float:right; 
+}
+.f-right{
+  float:right;
+}
+.dp-botao{
+  float:right;
+}
+.dp-menu{
+  background-color: #fff;
+  width: 100px;
+  height: 80px;
+  padding-left: 10px;
+  border-radius: 2px;
+  position:relative;
+  left:100px;
+}
+.dp-menu a:hover{
+  transition: 0.5;
+  right:200px;
+}
+.dp-menu li{
+  margin-right: 20px;
+  text-decoration: none;
+  color:#06c;
+  font-family: sans-serif "Open Sans";
+  list-style: none;
+  display: block;
 }
 
 header .navbarBotton li a:hover{
@@ -71,13 +93,7 @@ header .navbarBotton li a:hover{
 .opcoes{
     padding-top: 10px;
     position: relative;
-
 }
-.dropdown{
-  margin: 0px;
-  float: right;
-}
-
 #wrap {
   margin: 0;
   display: inline-block;
@@ -112,14 +128,17 @@ header input[type="text"]:focus {
   width: 700px;
   z-index: 1;
   cursor: text;
+  font-family: sans-serif;
+
 }
+
 header input[type="submit"] {
   height: 47px;
   width: 43px;
   display: inline-block;
   color:#fff;
   float: right;
-  background: url("images/search.png") center center no-repeat;
+  background: url(search.png) center center no-repeat;
   text-indent: -10000px;
   border: none;
   position: absolute;
@@ -129,18 +148,12 @@ header input[type="submit"] {
   cursor: pointer;
   cursor: pointer;
   transition: opacity .4s ease;
+  font-family: sans-serif;
 }
-
-header input[type="submit"]:hover {
-  opacity: 0.8;
-}
-#banner{
+.search{
+  padding:0;
   margin:0;
 }
-#banner h1{
-  font-family:"libertini", "Lato", "sans-serife";
-  text-align:center;
-  font-size: 100px;
-  color:#fff;
-  margin-top: 120px;
+header input[type="submit"]:hover {
+  opacity: 0.8;
 }

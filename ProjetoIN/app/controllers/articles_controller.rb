@@ -4,13 +4,15 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = Article.order(created_at: :desc)
+    
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
   end
+  
 
   # GET /articles/new
   def new
@@ -25,9 +27,9 @@ class ArticlesController < ApplicationController
   # POST /articles.json
   def create
     @article = Article.new(article_params)
-    
+   
+   # Preenchimento automático de usuário
     @article.user_id = current_user.id
-    @article.post_time = DateTime.now 
     
     respond_to do |format|
       if @article.save
@@ -72,6 +74,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :content, :post_time, :last_edit, :tags, :user_id)
+      params.require(:article).permit(:title, :content, :tags, :user_id)
     end
 end

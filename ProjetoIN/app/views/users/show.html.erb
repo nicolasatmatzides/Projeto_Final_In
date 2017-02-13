@@ -1,12 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p>
 <body>
 
-
+<div></div>
 <p>
   <strong>ID:</strong>
   <%= @user.id %>
@@ -28,11 +24,6 @@
 </p>
 
 <p>
-  <strong>Member since:</strong>
-  <%= @user.member_since %>
-</p>
-
-<p>
   <strong>Last time:</strong>
   <%= @user.last_time %>
 </p>
@@ -41,6 +32,6 @@
   <strong>Description:</strong>
   <%= @user.description %>
 </p>
-</body>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+</body>
