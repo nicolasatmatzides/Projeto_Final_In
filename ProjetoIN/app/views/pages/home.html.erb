@@ -1,0 +1,18 @@
+<div class='geral'>
+  <section class="col-sm-12 col-xs-12 col-md-8 posts">
+    <% @articles.each do |article| %>
+    <div class=post>
+      <a href="articles/<%= article.id %>"> <h2><%= article.title %></h2> </a>
+      
+      <div class=img> <img src="images/image.png"> </div>
+      <p> <%= article.content %> </p>
+      <%= link_to current_user.name, current_user %>
+    </div>
+    
+    <% end %>
+    
+  </section>
+  <section class="col-sm-12 col-xs-12 col-md-4">
+    <div class=lateral> MAIS COMENTADAS,PARTE DO FORUM, ETC </div>
+  </section>
+</div>

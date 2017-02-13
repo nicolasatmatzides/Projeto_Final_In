@@ -11,7 +11,7 @@ header{
      font-family: libertine;
      src: url('librtine.ttf');
 }
-.geral {
+header.geral {
 	min-height:100%;
 	position:relative;
 	width:100%;
@@ -58,7 +58,7 @@ header{
   border:none;
 }
 
-.navbarBotton li a:hover{
+header .navbarBotton li a:hover{
     transition: 0.5s;
     color: #b4b4b4;
     text-decoration: none;
@@ -87,7 +87,7 @@ header{
   position: relative;
 }
 
-input[type="text"] {
+header input[type="text"] {
   height: 40px;
   font-size: 20px;
   display: inline-block;
@@ -108,12 +108,12 @@ input[type="text"] {
   color: #b4b4b4;
 }
 
-input[type="text"]:focus {
+header input[type="text"]:focus {
   width: 700px;
   z-index: 1;
   cursor: text;
 }
-input[type="submit"] {
+header input[type="submit"] {
   height: 47px;
   width: 43px;
   display: inline-block;
@@ -131,7 +131,7 @@ input[type="submit"] {
   transition: opacity .4s ease;
 }
 
-input[type="submit"]:hover {
+header input[type="submit"]:hover {
   opacity: 0.8;
 }
 #banner{

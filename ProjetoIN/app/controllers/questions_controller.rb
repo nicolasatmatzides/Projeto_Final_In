@@ -25,6 +25,9 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(question_params)
+    
+    @question.post_time = DateTime.now 
+
 
     respond_to do |format|
       if @question.save

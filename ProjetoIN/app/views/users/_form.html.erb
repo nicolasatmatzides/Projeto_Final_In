@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, pattern: '[a-zA-Z]{1,20}\.[a-zA-Z]{1,20}@injunior\.com\.br' %>
   </div>
 
   <div class="field">

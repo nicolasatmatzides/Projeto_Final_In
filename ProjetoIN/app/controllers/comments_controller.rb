@@ -26,6 +26,8 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
 
+    @comment.post_time = DateTime.now 
+
     respond_to do |format|
       if @comment.save
         format.html { redirect_to @comment, notice: 'Comment was successfully created.' }

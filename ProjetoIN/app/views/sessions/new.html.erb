@@ -1,31 +1,31 @@
 <html>
- <head>
+ <head>   
    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
-   <body>
-      <div class="col-md-12 container login_geral" >
-        <div class="col-md-12 container login_formulario" >
-         <%= form_for(:session, url: login_path) do |f| %>
-          
-        <h2>
-        <%= f.label :email %><br>
-        <%= f.email_field :email %>
-        </h2>
-        <h2>
-        <%= f.label :senha %><br>
-        <%= f.password_field :password %>
-        </h2>
-        
-        <div class=login_btn><%= f.submit "LogIN" %></div>
-      
-          <% end %>
-          <div class="login_pass_reset">
-            <label> 
-              <input type="submit" value="Esqueceu sua senha?" class="pass-reset-submit btn btn-success btn-sm" />
-            </label>
-          </div>
-        </div>    
-      </div>  
-    </body>
-  </div>
+    <body>
+      <div class="container">
+        <div class= "col-xm-4 col-sm-4 col-md-4" ></div>
+        <div class="col-xm-4 col-sm-4 col-md-4" class="centro">
+              <div class=" login_formulario" >
+                <%= form_for(:session, url: login_path) do |f| %>
+                <h2>
+                <%= f.label :email %><br>
+                <%= f.email_field :email %>
+                </h2>
+                <h2>
+                <%= f.label :senha %><br>
+                <%= f.password_field :password %>
+                </h2>
+                <div class=login_btn><%= f.submit "LogIN" %></div>
+                <% end %>
+                <div class="login_pass_reset">
+                  <label> 
+                    <input type="button" value="Esqueceu sua senha?" class="pass-reset-submit btn btn-success btn-sm" />
+                  </label>
+                </div>
+              </div>    
+            </div>
+        <div class="col-xm-4 col-sm-4 col-md-4"> </div>
+      </div>
+  </body>
 </html>
