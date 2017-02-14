@@ -1,11 +1,8 @@
 
 <div class="col-sm-12 col-xs-12 col-md-12 new_user">
     <div class=nu_title>
-        <h1>New User</h1>
+        <h1>Novo Usuário</h1>
     </div>
-    <div class='col-sm-6 col-xs-6 col-md-6 nu_conteudo'>
-       <div class=names> <%= render 'form', user: @user %> </div>
-       <div class=tables>     </div>
-    </div>
-    <%= link_to 'Back', users_path %>
+        <%= render 'form', user: @user %>
+   <p class='link_voltar'> <%= link_to 'Back', users_path %></p>
 </div>

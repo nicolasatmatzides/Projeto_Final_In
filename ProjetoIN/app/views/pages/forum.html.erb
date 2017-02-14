@@ -1,7 +1,14 @@
+<section class=" col-xm-12 col-sm-4 col-md-5 questao_container">
 <% @questions.each do |question| %>
 <tr>
-    <td><%= link_to question.title, question %></td>
-    <td><%= question.content %></td>
-    <td><%= link_to question.user.name, question.user %></td>
+    <div class='questao_titulo>'
+        <td><%= link_to question.title, question %></td>
+    </div>
+    <div class='questao_conteudo>'
+        <td><%= question.content %></td>
+    <div class='questao_username'>
+        <td><%= link_to question.user.name, question.user %></td>
+    </div>
 </tr>
 <% end %>
+</section>

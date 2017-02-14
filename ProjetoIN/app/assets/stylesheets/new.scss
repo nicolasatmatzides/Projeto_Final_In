@@ -1,5 +1,5 @@
  .new_user{
-        min-height: 450px;
+      min-height: 310px;
     }
   .nu_title{
     text-align:center;
@@ -12,5 +12,39 @@
     margin-right:40px;
 }
 .nu_title{
-  margin-top:30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+.label_new_user p{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.fields_user {
+  float:left;
+}
+.fields_user p{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.fields_user input {
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: #696969;
+    height: 27px;
+}
+.right{
+  float: right;
+  text-align:right;
+}
+.fields_user textarea{
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: #696969;
+    width: 170px;
+}
+.link_voltar{
+  margin-top:0px;
+}
+  

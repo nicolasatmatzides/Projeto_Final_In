@@ -14,13 +14,15 @@
   
         <a href="articles/<%= article.id %>"> <h2><%= article.title %></h2> </a>
         <div class=img> <img src="images/image.png"> </div>
-        <p> <%texto=article.content %> </p>
+        <p> <% texto=article.content %> </p>
         <p> <%conteudo=texto.slice(0,200)%> </p>
         <p> <%=conteudo + "..."%></p>
       </div>
       <% end %>
-      <%= paginate @articles %>
   </section>
   <section class="col-sm-4 col-xs-12 col-md-4">
     <div class=lateral> MAIS COMENTADAS,PARTE DO FORUM, ETC </div>
+  </section>
+  <section class="col-sm-12 col-xs-12 col-md-12">
+    <%= paginate @articles %>
   </section>
