@@ -10,6 +10,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @answers = Answer.where('question_id = ?', params[:id])
   end
 
   # GET /questions/new

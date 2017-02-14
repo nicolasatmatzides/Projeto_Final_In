@@ -1,37 +1,63 @@
-<p id="notice"><%= notice %></p>
+  <%= notice %>
+  <div></div>
+  <section class="col-sm-12 col-xs-12 col-md-5 perfil_user">
+    <div class="user_foto">
+        <img scr="user-placeholder-circle.png" alt="foto do usuário">
+    </div>  
 
-<body>
-
-<div></div>
-<p>
-  <strong>ID:</strong>
-  <%= @user.id %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Admin:</strong>
-  <%= @user.admin %>
-</p>
-
-<p>
-  <strong>Last time:</strong>
-  <%= @user.last_time %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @user.description %>
-</p>
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
-</body>
+    <!--<p>
+      
+     <strong>ID:</strong>
+      <%#= @user.id %>
+    </p>
+    
+    <p>
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>-->
+    
+    <p>
+      <strong>Nome:</strong>
+      <%= @user.name %>
+    </p>
+    
+    <p>
+      <strong>Descrição:</strong>
+      <%= @user.description %>
+    </p>  
+    
+    <!--<p>
+      <strong>Admin:</strong>
+      <%= @user.admin %>
+    </p>-->
+    
+    <p>
+      <strong>Último Acesso:</strong>
+      <%= @user.last_time %>
+    </p>
+    <div class='editar'>
+      <%= link_to 'Editar', edit_user_path(@user) %>
+    </div>
+    <div class='voltar'>
+      <%= link_to 'Voltar', users_path %>
+    </div>
+  </section>
+  <section class="col-sm-12 col-xs-12 col-md-7 abas_user">
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Seção 1</a></li>
+        <li><a href="#tab2" data-toggle="tab">Seção 2</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>Pontuação:</p>
+          <p>Total de Artigos:</p>
+          <p>Total de Perguntas:</p>
+          <p>Total de Contribuições:</p>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <p>Essa é a seção 2</p>
+      </div>
+      </div>
+    </div>
+  </section>

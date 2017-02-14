@@ -63,6 +63,10 @@ body{
     margin-top:20px;
     width:80%;
   }
+  #session_password:focus{
+    background-color:transparent;
+    outline:none;
+  }
   
 .login_btn input{
    background-color:#fff;
@@ -93,6 +97,11 @@ body{
   outline:none;
   margin-top:20px;
   width:80%;
+  }
+  #session_email :focus{
+    background-color:transparent;
+    outline:none;
+
   }
 .login_pass_reset{
   padding:0px;

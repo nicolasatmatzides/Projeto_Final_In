@@ -8,4 +8,3 @@ class User < ApplicationRecord
     has_many :answers, through: :questions
     has_many :comments, through: :articles
 end
-

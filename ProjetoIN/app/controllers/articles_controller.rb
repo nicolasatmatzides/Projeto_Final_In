@@ -5,12 +5,14 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.order(created_at: :desc)
+
     
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @comments = Comment.where('article_id = ?', params[:id])
   end
   
 

@@ -1,4 +1,9 @@
 class SessionsController < ApplicationController
+  
+  skip_before_action :require_login, only: [:new, :create]
+  
+  before_action :redirect_if_logged_in, :except => [:destroy]
+
   def new
   end
 
@@ -16,11 +21,18 @@ class SessionsController < ApplicationController
   
   def destroy
     log_out
-    redirect_to root_url
+    redirect_to root_url  
   end
   
   
   private
+  
+  def redirect_if_logged_in
+    if logged_in?
+      redirect_to '/home', :notice => 'Você ja está logado'
+    end
+  end
+  
   
     def nao_logado
       if logged_in?

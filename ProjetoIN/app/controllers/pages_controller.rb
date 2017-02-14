@@ -1,7 +1,13 @@
 class PagesController < ApplicationController
     def home
-        @questions = Question.all
-        @articles = Article.order('created_at DESC').page params[:page]
 
+        @articles = Article.order('created_at DESC').page params[:page]
+    end
+    
+    
+    
+    
+    def forum
+        @questions = Question.order('created_at DESC') 
     end
 end

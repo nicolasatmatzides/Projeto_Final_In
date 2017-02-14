@@ -4,13 +4,14 @@
 }
 .home{
   margin:0px;
-  padding:opx;
+  padding:0px;
+  height:100%;
 }
 .banner{
   margin:0;
-  height:500px;
+  height:400px;
   background-color:#b4b4b4;
-  margin:0;
+  padding:0;
 }
 #banner h1{
   font-family:"libertini", "Lato", "sans-serife";
@@ -31,7 +32,7 @@
 } 
 .post{
     text-align: center;
-    margin:60px 0px 60px 0px;
+    margin:30px 0px 60px 0px;
     padding: 10px 20px 30px 20px;
     border-radius:3px;
     background: #fff;
@@ -51,7 +52,7 @@
 }
 .lateral{
     text-align: center;
-    margin: 60px 80px 0px 0px;
+    margin: 110px 80px 0px 0px;
     padding: 30px 20px 30px 20px;
     border-radius:3px;
     background: #fff;
@@ -70,4 +71,28 @@
 .nome_user{
   float:left;
   margin:0 !important;
+}
+.pagination a{
+  padding-left:15px;
+}
+.pagination{
+  margin-left:500px;
+}
+.btn_criaPost{
+  width:110px;
+  margin-top: 40px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:#fff
+}
+.btn_criaPost a{
+  border-radius:10px;
+  color:#fff;
+  text-decoration: none;
+}
+.btn_criaPost a:hover{
+  color:#b4b4b4;
 }

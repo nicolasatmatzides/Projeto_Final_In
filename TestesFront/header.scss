@@ -25,14 +25,14 @@ header{
     border-bottom: 50%;
     border-color: #696969;
     border-width: 0.5px;
-    margin-left: 70px;
+    margin-left: 10%;
 }
 .navbarBotton {
    background-color: #000;
    width: 80%;
    height: 40px;
    float: center;
-   margin-left: 30px;
+   margin-left: 10%;
    margin-top: 0px;
 }
 header .navbarBotton li a:hover{
@@ -68,7 +68,7 @@ header .navbarBotton li a:hover{
   position: relative;
 }
 
-header input[type="text"] {
+input[type="text"] {
   height: 40px;
   font-size: 20px;
   display: inline-block;
@@ -95,7 +95,7 @@ input[type="text"]:focus {
   cursor: text;
   font-family: sans-serif;
 }
-header input[type="submit"] {
+input[type="submit"] {
   height: 47px;
   width: 43px;
   display: inline-block;
@@ -113,55 +113,11 @@ header input[type="submit"] {
   transition: opacity .4s ease;
   font-family: sans-serif;
 }
-
-header.search{
+.search{
   padding:0;
   margin:0;
 }
 
-header input[type="submit"]:hover {
+input[type="submit"]:hover {
   opacity: 0.8;
 }
-
-.dropdown-itens{
-    padding: 0px;
-    border: 0px;
-    border-radius: 0px;
-    border-style:none;
-    margin-right:100px;
-
-}
-.dropdown-itens>li>a {
-    color: #696969;
-    transition: 0.3s;
-}
-
-.dropdown-itens>li>a:hover {
-    background: transparent;
-    transition: 0.3s;
-}
-.dropdown-menu{
-   border-radius: 0px 0px 15px 15px;
-
-}
-
-
-.nav>li>a:focus, .nav>li>a:hover {
-    transition:1sec;
-     text-decoration: none;
-    color: rgba(73,155,234,1) !important;
-}
-.navbar-right{
-  margin-right:-20px;
-  margin-bottom:0px;
-  
-}
-.navbar-right li a{
-  padding: 10px 0px 0px 10px;
-  position: relative;
-  line-height: 20px; 
-  display: block;
-  margin-left: 5px;
-  background-color:transparent !important;
-}
-  
