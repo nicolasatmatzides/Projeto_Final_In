@@ -14,9 +14,9 @@
   
         <a href="articles/<%= article.id %>"> <h2><%= article.title %></h2> </a>
         <div class=img> <img src="images/image.png"> </div>
-        <p> <% texto=article.content %> </p>
+        <p> <% texto= article.content %> </p>
         <p> <%conteudo=texto.slice(0,200)%> </p>
-        <p> <%=conteudo + "..."%></p>
+        <p> <%=raw conteudo + "..."%></p>
       </div>
       <% end %>
   </section>

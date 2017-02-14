@@ -2,31 +2,36 @@
 
 <div class="col-xs-12 col-sm-12 col-md-12 geral_article">
 
-<div class="col-md-6 personal_article">
-    <p><i>
-      <strong>User:</strong>
-      <%= @article.user_id %>
-    </i></p>
+<div class="col-md-12 personal_article">
+    <div class='article-user'>
+      <p><i>
+        <strong>User:</strong>
+        <%= @article.user_id %>
+      </i></p>
+    </div>
+    <div class='article_title'
+      <h2>
+        <b><%= @article.title %></b>
+      </h2>
+    </div>
     
-    <h2>
-      <strong>Title:</strong>
-      <%= @article.title %>
-    </h2>
+    <div class='article_content'
+      <p>
+        <%= raw @article.content %>
+      </p>
+    </div>
     
-    <p>
-      <strong>Content:</strong>
-      <%= raw @article.content %>
-    </p>
-    
-    <p><b>
-      <strong>Tags:</strong>
-      <%= @article.tags %>
-    </b></p>
-
+    <div class='article_tags'
+      <p>
+        <strong>Tags:</strong>
+        <%= @article.tags %>
+      </p>
+    </div>
 </div>
 
-<h2> Comentários </h2>
-
+<div class='coments'>
+  <p> Comentários: </p>
+</div>
 <% @comments.each do |comment| %>
     <%= comment.content %>
     <%= comment.user.name %>
