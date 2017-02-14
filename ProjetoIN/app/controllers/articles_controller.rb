@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
    
    # Preenchimento automático de usuário
     @article.user_id = current_user.id
-    
+    #@user.increment(:counter, by = 1)
     respond_to do |format|
       if @article.save
         format.html { redirect_to @article, notice: 'Article was successfully created.' }

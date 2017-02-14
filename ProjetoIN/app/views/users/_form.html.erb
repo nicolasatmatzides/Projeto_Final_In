@@ -10,38 +10,31 @@
       </ul>
     </div>
   <% end %>
+  <div class="col-sm-8 col-xs-8 col-md-8 label_new_user">
 
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= f.label :name %><br>
+
+    <%= f.label :email %><br>
+
+    <%= f.label :password %><br>
+    
+    <%= f.label :description %><br>
+ 
+    <%= f.label :admin %><br>
+  
   </div>
+  <div clas='col-sm-4 col-xs-4 col-md-4 fields_user'>
+    <%= f.text_field :name %><br>
+    
+    <%= f.text_field :email, pattern: '[a-zA-Z]{1,20}\.[a-zA-Z]{1,20}@injunior\.com\.br$' %><br>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email, pattern: '[a-zA-Z]{1,20}\.[a-zA-Z]{1,20}@injunior\.com\.br$' %>
-  </div>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :admin %>
-    <%= f.check_box :admin %>
-  </div>
-
-  <div class="field">
-    <%= f.label :last_time %>
-    <%= f.datetime_select :last_time %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+    <%= f.password_field :password %><br>
+    
+    <%= f.text_area :description %><br>
+    
+    <%= f.check_box :admin %><br>
+    
+    <%= f.submit %><br>
+    
   </div>
 <% end %>

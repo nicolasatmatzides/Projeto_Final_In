@@ -79,20 +79,39 @@
   margin-left:500px;
 }
 .btn_criaPost{
-  width:110px;
+  width:130px;
   margin-top: 40px;
   background-color:#06c;
   font-size:17px;
   text-align:center;
   padding: 10px 5px 10px;
   border-radius: 2px;
-  color:#fff
+  color:white;
 }
-.btn_criaPost a{
-  border-radius:10px;
-  color:#fff;
-  text-decoration: none;
+
+.btn_criaPost a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-.btn_criaPost a:hover{
-  color:#b4b4b4;
+
+.btn_criaPost a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn_criaPost:hover a {
+  padding-right: 25px;
+}
+
+.btn_criaPost:hover a:after {
+  opacity: 1;
+  right: 0;
 }
