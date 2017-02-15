@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:edit, :show, :new]
 
   # GET /articles
   # GET /articles.json
@@ -13,7 +14,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @comments = Comment.where('article_id = ?', params[:id])
-    @new_comment = Comment.new
   end
   
 

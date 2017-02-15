@@ -10,5 +10,9 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
     end
   end
-  
+  def authorize
+    unless current_user.admin?
+      redirect_to '/home'
+    end
+  end
 end

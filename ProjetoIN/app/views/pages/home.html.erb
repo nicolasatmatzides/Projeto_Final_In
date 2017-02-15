@@ -1,6 +1,12 @@
-<div class="col-sm-12 col-xs-12 col-md-12 banner">
-    <h1></h1>
-</div>
+<div id="color_intro ">
+<div class="col-sm-12 col-xs-12 col-md-12 banner ">
+  <section class="cd-intro">
+  	<div class="cd-intro-content bouncy">
+  		<h1>WikINpédia!</h1>
+  		<p>Não adianta possuir conhecimento se não souber administrá-lo</p>
+  		</div>
+  	</div>
+  </section>
   <section class="col-sm-8 col-xs-12 col-md-8 posts">
     <div class='btn_criaPost'> <%= link_to 'Criar Post', new_article_path %> </div>
       <% @articles.each do |article| %>
@@ -18,16 +24,17 @@
       <% end %>
   </section>
   <section class="col-sm-4 col-xs-12 col-md-4">
-    <div class=lateral> FÓRUM </div>
-      <%# @questions.each do |question| %>
-      <%#= link_to question.user.name, question.user %>
-      <%#= question.created_at %>
+    <div class=lateral> 
+      <h2>FÓRUM</h2> 
+      <% @questions.each do |question| %>
+      <%= link_to question.user.name, question.user %>
+      <%= question.created_at %>
   
-      <!--<h2> <%#= link_to question.title, question %><h2></a>-->
+      <a><h2> <%= link_to question.title, question %><h2></a>
+  <% end %>
     </div>
-  <%# end %>
-
   </section>
   <section class="col-sm-12 col-xs-12 col-md-12">
     <%= paginate @articles %>
   </section>
+</div>

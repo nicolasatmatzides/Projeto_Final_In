@@ -5,7 +5,6 @@
 <div class="col-md-12 personal_article">
   <div class='article-user'>
     <p>
-    <strong>User:</strong>
       <%= @article.user.name %>
       <p class='article_date'><%= @article.created_at %></p>
     </p>
@@ -42,6 +41,7 @@
   <% end %>
 </div>
 <div class=novo_comment>Novo Comentário:</div>
-<%= link_to 'Editar', edit_article_path(@article) %> |
+
+<%= link_to 'Editar', edit_article_path(@article) %>
 <%= link_to 'Voltar', articles_path %>
 </div>

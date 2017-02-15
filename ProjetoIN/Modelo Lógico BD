@@ -1,22 +1,18 @@
 /* E-mail deve passar por verificação. Senha, nome e admin não podem ser nulos */
 User(id:serial, password_digest:string, email:string, name:string, admin:boolean,
-member_since:datetime, last_time:datetime, description:text)
+last_time:datetime, description:text)
 
-Question(id:serial, title:string, content:text, post_time:datetime, 
-last_edit:datetime,  tags:string, user_id:integer)
+Question(id:serial, title:string, content:text, tags:string, user_id:integer)
     user_id refers to User
     
-Article(id:serial, title:string, content:text, post_time:datetime,  
-last_edit:datetime, tags:string, user_id:integer)
+Article(id:serial, title:string, content:text, tags:string, user_id:integer)
     user_id refers to User
     
-Answer(id:serial, content:text, post_time:datetime, last_edit:datetime, 
-user_id:integer, question_id:integer)
+Answer(id:serial, content:text, user_id:integer, question_id:integer)
     user_id refers to User
     question_id refers to Question
 
-Comment(id:serial, content:text, post_time:datetime, last_edit:datetime, 
-user_id:integer, article_id:integer)
+Comment(id:serial, content:text, user_id:integer, article_id:integer)
     user_id refers to User
     article_id refers to Article
   

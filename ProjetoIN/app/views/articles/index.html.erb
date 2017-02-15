@@ -1,9 +1,13 @@
 <div class="col-sm-12 col-xs-12 col-md-12 list_articles">
 
 <p id="notice"><%= notice %></p>
+  <div class=new_art>
+    <%= link_to 'Novo Artigo', new_article_path %>
+  </div>
   <div class=nu_title>
     <h1>Artigos</h1>
   </div>
+
 <table>
   <thead>
     <tr>
@@ -36,5 +40,4 @@
 
 <br>
 
-<%= link_to 'New Article', new_article_path %>
 </div>
