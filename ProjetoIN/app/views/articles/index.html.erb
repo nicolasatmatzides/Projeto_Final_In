@@ -1,16 +1,18 @@
+<div class="col-sm-12 col-xs-12 col-md-12 list_articles">
+
 <p id="notice"><%= notice %></p>
-
-<h1>Articles</h1>
-
+  <div class=nu_title>
+    <h1>Artigos</h1>
+  </div>
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Post time</th>
-      <th>Last edit</th>
+      <th>Titulo</th>
+      <th>Conteúdo</th>
+      <th>Hora do post</th>
+      <th>Última Edição</th>
       <th>Tags</th>
-      <th>User</th>
+      <th>Usuário</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,13 +20,15 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
-        <td><%= article.title %></td>
-        <td><%= article.content %></td>
+        <td><%= raw article.title %></td>
+        <td><%= raw article.content %></td>
+        <td><p class='article_date'><%= article.created_at %></p></td>
+        <td><p class='article_date'><%= article.updated_at %></p></td>
         <td><%= article.tags %></td>
-        <td><%= article.user_id %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= article.user.name %></td>
+        <td><%= link_to 'Mostrar', article %></td>
+        <td><%= link_to 'Editar', edit_article_path(article) %></td>
+        <td><%= link_to 'Excluir', article, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,3 +37,4 @@
 <br>
 
 <%= link_to 'New Article', new_article_path %>
+</div>

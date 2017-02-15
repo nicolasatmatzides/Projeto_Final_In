@@ -1,27 +1,32 @@
-  <div class="col-sm-12 col-xs-12 col-md-12 banner">
+<div class="col-sm-12 col-xs-12 col-md-12 banner">
     <h1></h1>
-  </div>
-  
+</div>
   <section class="col-sm-8 col-xs-12 col-md-8 posts">
-        <div class='btn_criaPost'> <%= link_to 'Criar Post', new_article_path %> </div>
-
+    <div class='btn_criaPost'> <%= link_to 'Criar Post', new_article_path %> </div>
       <% @articles.each do |article| %>
-      <div class=post>
-  
+    <div class=post>
         <p class='nome_user'><%= link_to article.user.name, article.user %></p></br>
   
         <p class='article_date'><%= article.created_at %></p>
   
         <a href="articles/<%= article.id %>"> <h2><%= article.title %></h2> </a>
-        <div class=img> <img src="images/image.png"> </div>
+        
         <p> <% texto= article.content %> </p>
         <p> <%conteudo=texto.slice(0,200)%> </p>
-        <p> <%=raw conteudo + "..."%></p>
-      </div>
+        <p> <%=raw conteudo + "..." %></p>
+    </div>
       <% end %>
   </section>
   <section class="col-sm-4 col-xs-12 col-md-4">
-    <div class=lateral> MAIS COMENTADAS,PARTE DO FORUM, ETC </div>
+    <div class=lateral> FÓRUM </div>
+      <%# @questions.each do |question| %>
+      <%#= link_to question.user.name, question.user %>
+      <%#= question.created_at %>
+  
+      <!--<h2> <%#= link_to question.title, question %><h2></a>-->
+    </div>
+  <%# end %>
+
   </section>
   <section class="col-sm-12 col-xs-12 col-md-12">
     <%= paginate @articles %>

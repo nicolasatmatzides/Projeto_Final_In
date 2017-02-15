@@ -1,10 +1,12 @@
+//-----PERFIL DO USUÁRIO-----HTML em users > show.html.erb
+
 .perfil_user{
   padding-left: 130px;
   padding-right: 30px;
   border-right: 1px solid #000;
   border-color: #b4b4b4;
   background: #fff;
-  height: 500px;
+  min-height: 500px;
   font-size: 18px;
 }
 .user_foto{
@@ -18,9 +20,9 @@
   background-color:#06c;
   font-size:17px;
   text-align:center;
-  padding: 2px 5px 7px 5px;
+  padding: 7px 5px 7px 5px;
   border-radius: 2px;
-  //margin-top:20px;
+  margin-top:40px;
 }
 .editar a{
   color:#fff;
@@ -30,8 +32,44 @@
   background-color:#0174DF;
   text-decoration:none;
 }
+
 .voltar{
-  margin-top:40px;
+  width:80px;
+  height:40px;
+  margin-top: 40px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+}
+
+.voltar a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.voltar a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.voltar:hover a {
+  padding-right: 25px;
+}
+
+.voltar :hover a:after {
+  opacity: 1;
+  right: 0;
 }
 .tabbable{
   height:400px;
@@ -44,4 +82,101 @@
 .tab-pane p{
   margin-top: 30px;
   margin-left: 10px;
+}
+
+//-----EDITAR PERFIL DO USUÁRIO----html em users >edit.html.erb-----------------
+.edit_user{
+  min-height:350px;
+}
+.edit_user h1{
+  text-align:center;
+  font-size:35px;
+}
+.edit_user h1{
+  padding-top:25px;
+  padding-bottom:30px;
+  color:#696969;
+}
+.link_voltar{
+    width: 130px;
+    margin-top: 40px;
+    background-color:#696969;
+    font-size:17px;
+    text-align:center;
+    padding: 10px 5px 10px;
+    border-radius: 2px;
+    color:white;
+  }
+  
+  .link_voltar a {
+    text-decoration:none;
+    cursor: pointer;
+    color:white;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .link_voltar a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .link_voltar:hover a {
+    padding-right: 25px;
+  }
+  
+  .link_voltar:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+/*.edit_user .fields_user input {
+  width:80px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 7px 5px 7px 5px;
+  border-radius: 2px;
+  margin-top:40px;
+}*/
+//------------LISTAGEM DE USUÁRIOS---index.html.erb------------
+.list_users{
+  min-height: 450px;
+}
+.list_users table th{
+  padding-right:50px;
+
+}
+.list_users table{
+  margin-left:65px;
+  width:1100px;
+}
+.list_users table td{
+  padding-bottom: 20px;
+}
+.list_users table td a{
+  text-decoration:none;
+  padding-right:10px;
+}
+.new_usr{
+  width:120px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 7px 5px 7px 5px;
+  border-radius: 2px;
+  margin-top:40px;
+  margin-left:65px;
+}
+.new_usr a{
+  color:#fff;
+  text-decoration:none;
+}
+.new_usr:hover{
+  background-color:#0174DF;
+  text-decoration:none;
 }

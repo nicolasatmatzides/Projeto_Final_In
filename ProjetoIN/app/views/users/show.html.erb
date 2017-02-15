@@ -1,8 +1,10 @@
+<!----PERFIL DO USUÁRIO----- CSS em stylesheets >users.scss--->  
+  
   <%= notice %>
   <div></div>
   <section class="col-sm-12 col-xs-12 col-md-5 perfil_user">
     <div class="user_foto">
-        <%= image_tag("male-user.png", alt:'Foto do usuário') %>
+        <%= image_tag("user.png", alt:'Foto do usuário') %>
     </div>  
 
     <!--<p>
@@ -38,9 +40,9 @@
     <div class='editar'>
       <%= link_to 'Editar', edit_user_path(@user) %>
     </div>
-    <div class='btn_criaPost'> 
-      <%= link_to 'Criar Post', new_article_path %> 
-    </div>
+    <!--<div class='btn_criaPost'> 
+      <#%= link_to 'Criar Post', new_article_path %> 
+    </div>-->
     <div class='voltar'>
       <%= link_to 'Voltar', users_path %>
     </div>

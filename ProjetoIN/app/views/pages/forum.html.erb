@@ -1,14 +1,21 @@
-<section class=" col-xm-12 col-sm-4 col-md-5 questao_container">
-<% @questions.each do |question| %>
-<tr>
-    <div class='questao_titulo>'
-        <td><%= link_to question.title, question %></td>
+<section class=" col-xm-12 col-sm-12 col-md-12 questoes">
+  <div class='btn_criaQuestion'> <%= link_to 'Fazer Pergunta', new_question_path %> </div>
+  
+  <% @questions.each do |question| %>
+    <div class='questao'>
+      <p class='questao_nomeUser'><%= link_to question.user.name, question.user %></p>
+      <p class='questao_date'><%= question.created_at %></p>
+
+     <a href="articles/<%= question.id %>"><h2> <%= link_to question.title, question %><h2></a>
+  
+      <% tam = question.content.length %>
+      <% if tam >10 %>
+        <%quest_conteudo = question.content.slice(0,200)%>
+        <%quest_conteudo = raw quest_conteudo + "..." %>
+      <% else%>
+        <%= raw question.content %>
+      <% end %>
+
     </div>
-    <div class='questao_conteudo>'
-        <td><%= question.content %></td>
-    <div class='questao_username'>
-        <td><%= link_to question.user.name, question.user %></td>
-    </div>
-</tr>
 <% end %>
 </section>

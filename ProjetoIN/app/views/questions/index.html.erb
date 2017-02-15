@@ -1,6 +1,10 @@
+<div class="col-sm-12 col-xs-12 col-md-12 list_questions">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Questions</h1>
+  <div class=nu_title>
+    <h1>Questões</h1>
+  </div>
 
 <table>
   <thead>
@@ -21,15 +25,17 @@
         <td><%= question.title %></td>
         <td><%= question.content %></td>
         <td><%= question.tags %></td>
-        <td><%= question.user_id %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= question.user.name %></td>
+        <td><%= link_to 'Show', question %>
+          <%= link_to 'Edit', edit_question_path(question) %>
+          <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Question', new_question_path %>
+<div class=new_quest>
+  <%= link_to 'New Question', new_question_path %>
+</div>
+</div>

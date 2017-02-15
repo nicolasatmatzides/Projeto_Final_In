@@ -3,40 +3,45 @@
 <div class="col-xs-12 col-sm-12 col-md-12 geral_article">
 
 <div class="col-md-12 personal_article">
-    <div class='article-user'>
-      <p><i>
-        <strong>User:</strong>
-        <%= @article.user_id %>
-      </i></p>
-    </div>
-    <div class='article_title'
-      <h2>
-        <b><%= @article.title %></b>
-      </h2>
-    </div>
-    
-    <div class='article_content'
-      <p>
-        <%= raw @article.content %>
-      </p>
-    </div>
-    
-    <div class='article_tags'
-      <p>
-        <strong>Tags:</strong>
-        <%= @article.tags %>
-      </p>
-    </div>
+  <div class='article-user'>
+    <p>
+    <strong>User:</strong>
+      <%= @article.user.name %>
+      <p class='article_date'><%= @article.created_at %></p>
+    </p>
+  </div>
+  <div class='article_title'>
+    <h2><b>
+      <%= @article.title %>
+    </b></h2>
+  </div>
+  <div class='article_content'
+    <p>
+      <%= raw @article.content %>
+    </p>
+  </div>
+  <div class='article_tags'
+    <p>
+      <strong>Tags:</strong>
+      <%= @article.tags %>
+    </p>
+  </div>
 </div>
-
-<div class='coments'>
+<!--------COMENTÁRIOS---------------------------------------------------------->
+<div class='comments'>
   <p> Comentários: </p>
+  <% @comments.each do |comment| %>
+    <div class='comment-user'>
+    <p>
+      <%= comment.user.name %>
+      <p class='comment_date'><%= comment.created_at %></p>
+    </p>
+  </div>
+      <%= comment.content %>
+      <%#= comment.article_id %>
+  <% end %>
 </div>
-<% @comments.each do |comment| %>
-    <%= comment.content %>
-    <%= comment.user.name %>
-    <%= comment.article_id %>
-<% end %>
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div class=novo_comment>Novo Comentário:</div>
+<%= link_to 'Editar', edit_article_path(@article) %> |
+<%= link_to 'Voltar', articles_path %>
 </div>

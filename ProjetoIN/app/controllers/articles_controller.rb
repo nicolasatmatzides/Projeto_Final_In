@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @comments = Comment.where('article_id = ?', params[:id])
+    @new_comment = Comment.new
   end
   
 

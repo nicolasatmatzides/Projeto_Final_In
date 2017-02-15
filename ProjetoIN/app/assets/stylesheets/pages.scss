@@ -1,3 +1,4 @@
+//-------------HOME --------------------
 @font-face {
      font-family: libertine;
      src: url('librtine.ttf');
@@ -5,6 +6,7 @@
 .home{
   margin:0px;
   padding:0px;
+  min-height:500px;
   height:100%;
 }
 .banner{
@@ -73,13 +75,11 @@
   margin:0 !important;
 }
 .pagination a{
-  text-align:center;
-  
+  padding-left: 10px;
 }
 .pagination{
   width:100%;
   text-align:center;
-
 }
 .btn_criaPost{
   width:130px;
@@ -117,4 +117,64 @@
 .btn_criaPost:hover a:after {
   opacity: 1;
   right: 0;
+}
+//----------------FÓRUM-----------------------------
+.questao_container{
+  min-height:450px;
+}
+.btn_criaQuestion{
+  width: 180px;
+  margin-top: 40px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+}
+  
+.btn_criaQuestion a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+  
+.btn_criaQuestion a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  
+.btn_criaQuestion:hover a {
+  padding-right: 25px;
+}
+
+.btn_criaQuestion:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+.questoes{
+  padding: 0px 100px;
+  background:#fafafa;
+} 
+.questao{
+    margin:30px 0px 60px 0px;
+    padding: 10px 20px 30px 20px;
+    border-radius:3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    border: 1px solid rgba(0,0,0,.12);
+}
+.questao h2{
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.questao a:hover{
+  text-decoration:none;
 }

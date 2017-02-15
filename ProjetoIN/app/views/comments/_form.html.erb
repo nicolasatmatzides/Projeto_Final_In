@@ -10,21 +10,20 @@
       </ul>
     </div>
   <% end %>
-
+    <div class="field">
+    <%#= f.label :user_id %>
+    <%= f.number_field :user.name %>
+  </div>
+  
   <div class="field">
     <%= f.label :content %>
     <%= f.cktext_area :content %>
   </div>
 
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.number_field :user_id %>
-  </div>
-
-  <div class="field">
-    <%= f.label :article_id %>
-    <%= f.number_field :article_id %>
-  </div>
+  <!--<div class="field">
+    <%#= f.label :article_id %>
+    <%#= f.number_field :article_id %>
+  </div>--->
 
   <div class="actions">
     <%= f.submit %>

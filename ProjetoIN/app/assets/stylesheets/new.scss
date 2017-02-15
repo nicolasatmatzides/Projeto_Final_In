@@ -1,8 +1,11 @@
+ //-----NOVO USUARIO--------html: users>new.html.erb
  .new_user{
       min-height: 310px;
     }
   .nu_title{
     text-align:center;
+    color:#696969;
+    
   }  
   .nu_conteudo{
     text-align:center;
@@ -46,5 +49,9 @@
 }
 .link_voltar{
   margin-top:0px;
+  margin-bottom:30px;
 }
-  
+.link_voltar a{
+  color:#fff;
+  text-decoration:none;
+}

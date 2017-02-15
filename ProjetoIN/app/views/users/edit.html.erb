@@ -1,10 +1,11 @@
-
+<!---EDITAR PERFIL DO USUÁRIO -----css em stylesheets > users.scss--->
 <div class="col-sm-12 col-xs-12 col-md-12 edit_user">
 
-    <h1>Editing User</h1>
+    <h1>Editar Perfl de <%= @user.name %></h1>
     
     <%= render 'form', user: @user %>
     
-    <%= link_to 'Show', @user %> |
-    <%= link_to 'Back', users_path %>
+    <%= link_to 'Mostar', @user %> 
+    <%= link_to 'Voltar', users_path %>
+    
 </div>

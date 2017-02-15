@@ -89,7 +89,7 @@ header input[type="text"] {
   color: #b4b4b4;
 }
 
-input[type="text"]:focus {
+header input[type="text"]:focus {
   width: 700px;
   z-index: 1;
   cursor: text;
@@ -129,7 +129,6 @@ header input[type="submit"]:hover {
     border-radius: 0px;
     border-style:none;
     margin-right:100px;
-
 }
 .dropdown-itens>li>a {
     color: #696969;
@@ -141,23 +140,20 @@ header input[type="submit"]:hover {
     transition: 0.3s;
 }
 .dropdown-menu{
-   border-radius: 0px 0px 15px 15px;
-
+   border-radius: 3px;
 }
-
 
 .nav>li>a:focus, .nav>li>a:hover {
-    transition:1sec;
-     text-decoration: none;
-    color: rgba(73,155,234,1) !important;
+   transition:1sec;
+   text-decoration: none;
+   color:#0080FF !important;
 }
 .navbar-right{
-  margin-right:-20px;
   margin-bottom:0px;
-  
+  margin-right:-20px;
 }
 .navbar-right li a{
-  padding: 10px 0px 0px 10px;
+  padding: 5px 0px 0px 10px;
   position: relative;
   line-height: 20px; 
   display: block;
