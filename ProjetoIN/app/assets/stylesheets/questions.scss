@@ -99,45 +99,7 @@
 .questions_show #new_answer {
     padding-left: 60px;
 }
-/*.btn_criaQuest {
-  width: 130px;
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background-color:#06c;
-  font-size:17px;
-  text-align:center;
-  padding: 10px 5px 10px;
-  border-radius: 2px;
-  color: white;
-}
-  
-.btn_criaQuest a {
-  text-decoration:none;
-  cursor: pointer;
-  color:white;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-  
-.btn_criaQuest a:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
-}
-  
-.btn_criaQuest:hover a {
-    padding-left: 25px;
-}
-  
-.btn_criaQuest:hover a:after {
-  opacity: 1;
-  left: 0;
-}*/
+
 .btnEdit{
   float: right;
   width:130px;
@@ -199,4 +161,34 @@
 }
 .questions_show #new_answer{
   padding-left:0px;
+}
+//---------------EDITAR QUESTION------------------
+.edit_question{
+  min-height:550px;
+}
+.link_voltar a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link_voltar a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.link_voltar:hover a {
+  padding-right: 25px;
+}
+
+.link_voltar :hover a:after {
+  opacity: 1;
+  right: 0;
 }

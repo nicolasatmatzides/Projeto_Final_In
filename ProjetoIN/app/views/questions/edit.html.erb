@@ -1,6 +1,9 @@
-<h1>Editar pergunta</h1>
+<div class="col-xs-12 col-sm-12 col-md-12 edit_question">
+  <div class='question_title'>
+        <h2>Editar Pergunta</h2>
+    </div>
 
-<%= render 'form', question: @question %>
-
-<%= link_to 'Show', @question %> |
-<%= link_to 'Back', questions_path %>
+    <%= render 'form', question: @question %>
+    
+    <div class='botao_voltar'><%= link_to 'Voltar', questions_path %></div>
+</div>

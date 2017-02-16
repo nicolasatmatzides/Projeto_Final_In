@@ -6,6 +6,8 @@
 #color_intro{
   background:#06c;
 }
+
+
 .home{
   margin:0px;
   padding:0px;
@@ -354,7 +356,7 @@ Bouncy
   padding: 0px 100px;
 } 
 .post{
-    text-align: center;
+    text-align: left;
     margin:30px 0px 60px 0px;
     padding: 10px 20px 30px 20px;
     border-radius:3px;
@@ -381,7 +383,9 @@ Bouncy
     background: #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,.09);
     border: 1px solid rgba(0,0,0,.09);
-    height: 1000px;
+    min-height:800px;
+    margin-bottom: 80px;
+
 }
 .lateral h2{
   font-size: 20px;

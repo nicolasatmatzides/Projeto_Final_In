@@ -3,7 +3,7 @@
         <h1>Editar Resposta</h1>
     </div>
     <%= render 'form', answer: @answer %>
-    
-    <%= link_to 'Show', @answer %> |
-    <%= link_to 'Back', answers_path %>
+    <div class='link_voltar'>
+        <%= link_to 'Voltar', answers_path %>
+    </div>
 </div>

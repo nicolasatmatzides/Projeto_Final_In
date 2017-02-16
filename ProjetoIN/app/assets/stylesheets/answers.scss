@@ -20,3 +20,41 @@
 .edit_answers{
     min-height: 750px;
 }
+.voltar{
+  width:80px;
+  height:40px;
+  margin-top: 40px;
+  background-color:#b4b4b4;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+}
+
+.link_voltar a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link_voltar a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.link_voltar:hover a {
+  padding-right: 25px;
+}
+
+.link_voltar :hover a:after {
+  opacity: 1;
+  right: 0;
+}
