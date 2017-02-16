@@ -5,11 +5,11 @@
         <a href="home"><%= image_tag("logopng.png", alt:'logo-in-junior') %></a>
       </div>
       <div id="wrap">
-        <form action="" autocomplete="on">
-          <input id="search" name="search" type=
-          "text" placeholder="Digite sua busca"><input id="search_submit"type="submit">
-        </form>
-      </div>
+        <%= form_tag home_url, :method => "get" do %>
+          <%= text_field_tag :search, params[:search], id:"search", placeholder: "Digite sua busca" %>
+          <%= submit_tag "Search", :name => nil %>
+        <% end %>
+      
     </div>
     <div class="navbarBotton">
       <div class=opcoes>
@@ -17,7 +17,7 @@
           <li><a href="/home">HOME</a></li>
           <li><%= link_to 'POSTS', home_url %></li>
           <li><%= link_to 'FORUM', forum_url  %></li>
-          <li><a href="#">ESTATÍSTICAS</a></li>
+          <li><a href="#">ESTATÍSTICAS</a> </li>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown-itens">
               <a href="#" class="dropdown-toggle user-min" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= @current_user.name %> <span class="caret"></span></a>
@@ -26,7 +26,7 @@
                 <li><%= link_to 'Favoritos'%></li>
                 <li><%= link_to 'Logout', logout_url %></li>
               </ul>
-            </li>
+             </li>
           </ul>
         </ul>
       </div>

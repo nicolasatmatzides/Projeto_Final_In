@@ -42,6 +42,7 @@ General Style
 }
 
 .cd-intro-content {
+  font-family: 'Roboto', sans-serif;
   /* vertically align inside its parent */
   display: table-cell;
   vertical-align: middle;
@@ -52,10 +53,12 @@ General Style
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-intro-content h1 {
-  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
   color: #ffffff;
 }
 .cd-intro-content p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4;
@@ -75,7 +78,7 @@ General Style
 }
 @media only screen and (min-width: 768px) {
   .cd-intro-content h1 {
-    font-size: 5.2rem;
+    font-size: 80px;
     font-weight: 300;
   }
   .cd-intro-content p {
@@ -380,7 +383,33 @@ Bouncy
     border: 1px solid rgba(0,0,0,.09);
     height: 1000px;
 }
-
+.lateral h2{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.titulo h2{
+  font-size: 24px;
+  padding-bottom:20px;
+  padding-top:20px;
+  color:#696969;
+}
+.pergunta{
+  border-bottom:solid  1px #E6E6E6;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.titulo_questao{
+  margin-bottom:20px;
+}
+.titulo_questao a{
+  font-size: 20px;
+  text-align: left;
+  margin-top: 50px;
+  color: #424242;
+  text-decoration: none;
+}
 .article_date {
   float:left;
   margin:0;
@@ -437,8 +466,8 @@ Bouncy
   right: 0;
 }
 //----------------FÓRUM-----------------------------
-.questao_container{
-  min-height:450px;
+.questoes{
+  min-height:550px;
 }
 .btn_criaQuestion{
   width: 180px;

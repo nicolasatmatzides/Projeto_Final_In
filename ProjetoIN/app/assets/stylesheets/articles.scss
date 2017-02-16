@@ -4,13 +4,15 @@
 
 //---------------Mostrar Artigo--------------------------------------------------
 .geral_article{
-    min-height:450px;
+  min-height:550px;
+  width: 100%;
+  padding: 0px;
 }
 .comments{
-    margin-left:65px;
+    padding-left: 65px;
     margin-bottom:20px;
-    width:1200px;
-    //overflow: scroll;
+    width:100%;
+    word-wrap: break-word;
 }
 .comments p{
     margin-bottom:20px;
@@ -55,17 +57,17 @@
     margin-bottom: 20px;
 }
 .article_back{
-    width: 180px;
-    margin-top: 40px;
-    background-color:#06c;
-    font-size:17px;
-    text-align:center;
-    padding: 10px 5px 10px;
-    border-radius: 2px;
-    color:white;
-  }
+  width: 180px;
+  margin: 40px 0px 20px 50px;
+  background-color:#b4b4b4;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+}
   
-  .article_back p {
+  .article_back a {
     text-decoration:none;
     cursor: pointer;
     color:white;
@@ -74,25 +76,85 @@
     transition: 0.5s;
   }
   
-  .article_back p:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+.article_back a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.article_back:hover a {
+  padding-right: 25px;
+}
+  
+.article_back:hover p:after {
+  opacity: 1;
+  right: 0;
+}
+
+.editar_btn{
+  float: right;
+  width:130px;
+  background-color:#06c;
+  border:none;
+  color:#fff;
+  font-size:17px;
+  text-align:center;
+  padding: 7px 5px 7px 5px;
+  border-radius: 2px;
+  margin-right: 35px;
+  padding:10px 5px 10px 5px;
+}
+.editar_btn a {
+  color: #fff;
+  text-decoration:none;
+}
+.editar_btn:hover{
+  background-color:#0174DF;
+  text-decoration:none;
+}
+
+.link_voltar{
+  width: 130px;
+  background-color:#696969;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+}
+  
+.voltar_btn a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+  
+.voltar_btn a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
   }
   
-  .article_back:hover p {
-    padding-right: 25px;
+.voltar_btn:hover a {
+    padding-left: 25px;
   }
   
-  .article_back:hover p:after {
+.link_voltar:hover a:after {
     opacity: 1;
-    right: 0;
-  }
+    left: 0;
+  } 
 // -----------RESPOSTAS-------------------------------------------------------------------
 #cke_comment_content{
+    word-wrap: break-word;
     width:1200px;
     margin-left:65px;
 }
@@ -104,10 +166,12 @@
     font-size: 14px;
 
 }
-.comment-user{
+.comment-user p{
+  margin:0px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
+    text-align:left;
 }
 //-----------NOVO ARTIGO-------------------------->
 #article_title {
@@ -117,7 +181,7 @@
     color:#696969;
 }
 #cke_article_content{
-    width:1200px;
+    width:80%;
     margin-left:65px; 
     margin-top:5px;
     margin-bottom:20px;
@@ -246,42 +310,45 @@
   padding-right:5px;
 }
 .new_art{
-    margin-right:90px;
-    width: 160px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    background-color:#06c;
-    font-size:17px;
-    text-align:center;
-    padding: 10px 5px 10px;
-    border-radius: 2px;
-    color:white;
-    float: right;
-  }
+  margin-right:90px;
+  width: 160px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+  float: right;
+}
   
-  .new_art a {
-    text-decoration:none;
-    cursor: pointer;
-    color:white;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
+.new_art a {
+  text-decoration:none;
+  cursor: pointer;
+  color:white;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.new_art a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
   
-  .new_art a:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
-  }
-  
-  .new_art:hover a {
-    padding-left: 25px;
-  }
-  
-  .new_art:hover a:after {
-    opacity: 1;
-    left: 0;
-  }
+.new_art:hover a {
+  padding-left: 25px;
+}
+
+.new_art:hover a:after {
+  opacity: 1;
+  left: 0;
+}
+.field{
+  margin:0px;
+}

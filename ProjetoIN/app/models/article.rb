@@ -5,4 +5,7 @@ class Article < ApplicationRecord
     validates :content, :presence => true
     validates :tags, :presence => true
     paginates_per 5
+    def self.search(search)
+        where("title LIKE ? OR content LIKE ? OR tags LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%") 
+    end
 end

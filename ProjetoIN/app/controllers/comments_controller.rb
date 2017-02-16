@@ -15,8 +15,7 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
-    @comment.user_id = current_user.id
-    @comment.article_id = params[:id]
+
   end
 
   # GET /comments/1/edit
@@ -27,10 +26,12 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(comment_params)
-
+    @comment.user_id = current_user.id
+    @comment.article_id = params[:comment][:article_id].to_i
+    
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
+        format.html { redirect_to @comment.article, notice: 'Comment was successfully created.' }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new }
@@ -73,4 +74,10 @@ class CommentsController < ApplicationController
     def comment_params
       params.require(:comment).permit(:content, :user_id, :article_id)
     end
+    
+    def find_article
+      
+    end
+    
+    
 end

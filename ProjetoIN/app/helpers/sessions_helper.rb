@@ -18,4 +18,17 @@ module SessionsHelper
       redirect_to(:root)
     end
   
+    def require_login
+    unless logged_in?
+      flash[:error] = "You must be logged in to access this section"
+      redirect_to root_url
+    end
+  end
+  def authorize
+    unless current_user.admin?
+      redirect_to '/home'
+    end
+  end
+  
+  
 end

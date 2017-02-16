@@ -1,6 +1,9 @@
-<h1>Editing Answer</h1>
-
-<%= render 'form', answer: @answer %>
-
-<%= link_to 'Show', @answer %> |
-<%= link_to 'Back', answers_path %>
+<div class="col-xs-12 col-sm-12 col-md-12 edit_answers">
+    <div class='editanswer_title'>
+        <h1>Editar Resposta</h1>
+    </div>
+    <%= render 'form', answer: @answer %>
+    
+    <%= link_to 'Show', @answer %> |
+    <%= link_to 'Back', answers_path %>
+</div>

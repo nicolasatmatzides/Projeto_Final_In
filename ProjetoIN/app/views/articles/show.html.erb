@@ -5,7 +5,7 @@
 <div class="col-md-12 personal_article">
   <div class='article-user'>
     <p>
-      <%= @article.user.name %>
+      <%= link_to @article.user.name, @article.user %>
       <p class='article_date'><%= @article.created_at %></p>
     </p>
   </div>
@@ -19,29 +19,59 @@
       <%= raw @article.content %>
     </p>
   </div>
-  <div class='article_tags'
+  <div class='article_tags'>
     <p>
       <strong>Tags:</strong>
       <%= @article.tags %>
     </p>
   </div>
 </div>
+<div class='editar_btn'>
+  <%= link_to 'Editar', edit_article_path(@article) %>
+</div>
 <!--------COMENTÁRIOS---------------------------------------------------------->
+
 <div class='comments'>
   <p> Comentários: </p>
   <% @comments.each do |comment| %>
     <div class='comment-user'>
     <p>
-      <%= comment.user.name %>
+      <%= link_to comment.user.name, comment.user %>
       <p class='comment_date'><%= comment.created_at %></p>
     </p>
   </div>
-      <%= comment.content %>
+      <p><%= raw comment.content %></p>
       <%#= comment.article_id %>
   <% end %>
 </div>
+<!--------------NOVO COMENTÁRIO------------------------------------------------------->
 <div class=novo_comment>Novo Comentário:</div>
 
-<%= link_to 'Editar', edit_article_path(@article) %>
-<%= link_to 'Voltar', articles_path %>
+<%#, :url => params[:id],  :method => 'post' %>
+<%= form_for(@new_comment) do |f| %>
+  <% if @new_comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+      <ul>
+      <% @new_comment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.cktext_area :content %>
+  </div>
+
+  <%= f.hidden_field :article_id, :value => @article.id %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<div class ='article_back'>
+    <%= link_to 'Voltar', articles_path %>
+  </div>
 </div>

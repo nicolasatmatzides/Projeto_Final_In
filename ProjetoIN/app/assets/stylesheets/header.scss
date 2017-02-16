@@ -1,13 +1,10 @@
+
 header{
 	width: 100%;
 	position: relative;
    margin:0 !important;
 }
 
-@font-face {
-     font-family: helvetica, libertine;
-     src: url('librtine.ttf');
-}
 
 .mynavbar{
     width: 100%;
@@ -28,12 +25,14 @@ header{
     margin-left: 130px;
 }
 .navbarBotton {
-   background-color: #000;
-   width: 80%;
-   height: 40px;
-   float: center;
-   margin-left: 90px;
-   margin-top: 0px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    width: 80%;
+    height: 0px;
+    float: center;
+    margin-left: 90px;
+    margin-top: -10px;
 }
 header .navbarBotton li a:hover{
     transition: 0.5s;
@@ -46,18 +45,23 @@ header .navbarBotton li a:hover{
     height: 10px; 
 }
 .opcoes li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
-    color:#06c;
-    font-family: helvetica sans-serif "Open Sans";
-    font-size:16px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color:#06c;
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  margin-top: 7px;
+
 }
 
 .opcoes{
     padding-top: 10px;
     position: relative;
+}
+.opcoes ul{
+    margin-left: -120px;
 }
 #wrap {
   margin: 0;
@@ -72,7 +76,7 @@ header input[type="text"] {
   height: 40px;
   font-size: 20px;
   display: inline-block;
-  font-family: "Lato";
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   border: none;
   outline: none;
@@ -93,7 +97,7 @@ header input[type="text"]:focus {
   width: 700px;
   z-index: 1;
   cursor: text;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 header input[type="submit"] {
   height: 47px;
@@ -111,7 +115,7 @@ header input[type="submit"] {
   cursor: pointer;
   cursor: pointer;
   transition: opacity .4s ease;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header.search{
@@ -149,11 +153,11 @@ header input[type="submit"]:hover {
    color:#0080FF !important;
 }
 .navbar-right{
-  margin-bottom:0px;
-  margin-right:-20px;
+   margin-bottom:0px;
+   margin-right: -170px;
 }
 .navbar-right li a{
-  padding: 5px 0px 0px 10px;
+  //padding: 5px 0px 0px 10px;
   position: relative;
   line-height: 20px; 
   display: block;

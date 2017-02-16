@@ -6,7 +6,7 @@
   border-right: 1px solid #000;
   border-color: #b4b4b4;
   background: #fff;
-  min-height: 500px;
+  min-height: 600px;
   font-size: 18px;
 }
 .user_foto{
@@ -37,7 +37,7 @@
   width:80px;
   height:40px;
   margin-top: 40px;
-  background-color:#06c;
+  background-color:#b4b4b4;
   font-size:17px;
   text-align:center;
   padding: 10px 5px 10px;
@@ -141,44 +141,7 @@
     margin-top: 28px;
     line-height: 28px;
   }
-/*.btn_criaUser {
-  width: 130px;
-  margin-top: 40px;
-  background-color:#696969;
-  font-size:17px;
-  text-align:center;
-  padding: 10px 5px 10px;
-  border-radius: 2px;
-  color:white;
-}
-  
-.btn_criaUser a {
-  text-decoration:none;
-  cursor: pointer;
-  color:white;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-  
-.btn_criaUser a:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
-}
-  
-.btn_criaUser:hover a {
-    padding-left: 25px;
-}
-  
-.btn_criaUser:hover a:after {
-  opacity: 1;
-  left: 0;
-}*/
-  
+
 
 //------------LISTAGEM DE USUÁRIOS---index.html.erb------------
 .list_users{

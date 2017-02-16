@@ -1,6 +1,6 @@
 //------INDEX QUESTIONS---------------------------
 .list_questions{
-    min-height:450px;
+    min-height:550px;
 }
 
 .list_questions table th{
@@ -19,18 +19,18 @@
   padding-right:10px;
 }
 .new_quest{
-    margin-right:70px;
-    width: 160px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    background-color:#06c;
-    font-size:17px;
-    text-align:center;
-    padding: 10px 5px 10px;
-    border-radius: 2px;
-    color:white;
-    float: right;
-  }
+  margin-right:70px;
+  width: 160px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color:#06c;
+  font-size:17px;
+  text-align:center;
+  padding: 10px 5px 10px;
+  border-radius: 2px;
+  color:white;
+  float: right;
+}
   
   .new_quest a {
     text-decoration:none;
@@ -63,7 +63,8 @@
 .questions_show{
   min-height:550px;
   margin-left: 45px;
-  width: 1350px;
+  width: 90%;
+  margin-right:40px;
 
 }
 .question_title{
@@ -95,8 +96,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.btn_criaQuest {
+.questions_show #new_answer {
+    padding-left: 60px;
+}
+/*.btn_criaQuest {
   width: 130px;
   margin-left: 50px;
   margin-top: 20px;
@@ -134,7 +137,7 @@
 .btn_criaQuest:hover a:after {
   opacity: 1;
   left: 0;
-}
+}*/
 .btnEdit{
   float: right;
   width:130px;
@@ -146,13 +149,54 @@
   padding: 7px 5px 7px 5px;
   border-radius: 2px;
   margin-top: -85px;
+  margin-right: 35px;
+  padding:10px 5px 10px 5px;
+}
+.btnEdit a {
   color: #fff;
   text-decoration:none;
-}
-.btnEdit{
-  color: #fff;
 }
 .btnEdit:hover{
   background-color:#0174DF;
   text-decoration:none;
+}
+.quest_respostas{
+  margin-left: 50px;
+}
+
+//---------------NOVA PERGUNTA--------------------------------
+.btvoltar {
+  float: left;
+  width: 130px;
+  background-color: #b4b4b4;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  padding: 7px 5px 7px 5px;
+  border-radius: 2px;
+  margin-left: 65px;
+  margin-top: 20px;
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 20px;
+}
+.btvoltar a{
+  text-decoration:none;
+  color: #fff;
+}
+
+.edit_article .actions {
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-right:5px;
+}
+.new_question{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.questions_show .field{
+    margin: 20px 0px 50px 50px;
+}
+.questions_show #new_answer{
+  padding-left:0px;
 }
